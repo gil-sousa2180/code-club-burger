@@ -1,10 +1,6 @@
 import React from 'react';
-
-import { Button as MyButton } from './styles';
-
-function Button({children, ...rest}) {
-    return<MyButton{...rest}>{children}</MyButton>
-
+import { Button as ContainerButton } from './styles';
+function Button({children, ...props}) {
+    return<ContainerButton {...props}>{children}</ContainerButton>
 }
-
 export default Button;

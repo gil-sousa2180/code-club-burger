@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const ContainerItems = styled.div`
     background: linear-gradient(
     157.44deg,
@@ -12,7 +11,6 @@ export const ContainerItems = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-
     ${ props => props.isBlur && `
         backdrop-filter: blur(45px);
         height: 100%;

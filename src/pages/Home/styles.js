@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-
-
 import background from '../../assets/background1.svg'
-
 export const Container = styled.div`
     background: url(${background});
     background-size: cover;
@@ -44,6 +41,40 @@ export const Input = styled.input`
     font-size: 20px;
     line-height: 28px;
 `;
+
+
+/*export const Button = styled.button`
+    width: 230px;
+    height: 50px;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.8); //${ props => props.isBack ? 'transparent' : '' };
+    border-radius: 14px;
+    border: none;    //${ props => props.isBack ? '1px solid #eee' : 'none'};
+    outline: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    color: #ffffff;
+    cursor: pointer; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+    
+    //img {
+    //    transform: ${ props => props.isBack && 'rotateY(180deg)'} ;
+    //}
+`;*/
 
 
 

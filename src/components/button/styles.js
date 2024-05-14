@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const Button = styled.button`
     width: 230px;
     height: 50px;
@@ -14,7 +13,6 @@ export const Button = styled.button`
     line-height: 28px;
     color: #ffffff;
     cursor: pointer; 
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,11 +21,9 @@ export const Button = styled.button`
     &:hover {
       opacity: 0.8;
     }
-
     &:active {
       opacity: 0.5;
     }
-    
     img {
         transform: ${ props => props.isBack && 'rotateY(180deg)'} ;
     }

@@ -1,9 +1,5 @@
 import styled from 'styled-components';
-
-
-
 import background from '../../assets/background2.svg'
-
 export const Container = styled.div`
     background: url(${background});
     background-size: cover;
@@ -60,6 +56,39 @@ export const User = styled.li`
    } 
 `;
 
+/*export const Button = styled.button`
+    width: 230px;
+    height: 50px;
+    margin-top: 100px;
+    background: transparent; //${ props => props.isBack ? 'transparent' : '' };
+    border-radius: 14px;
+    border: 1px solid #eee;    //${ props => props.isBack ? '1px solid #eee' : 'none'};
+    outline: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    color: #ffffff;
+    cursor: pointer; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    img {
+      transform: rotateY(180deg);
+    }
+
+    `;*/
 
 
 
