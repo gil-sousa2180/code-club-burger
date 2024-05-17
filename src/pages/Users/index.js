@@ -20,7 +20,7 @@ function Users() {
   const history = useHistory()
   useEffect(() => {
     async function fetchUser() {
-      const { data: newUsers } = await axios.get("http://localhost:3003/users",);
+      const { data: newUsers } = await axios.get("http://localhost:3001/users",);
       setUsers(newUsers);
     }
 
@@ -30,7 +30,7 @@ function Users() {
     history.push('/')
   }
   async function deleteUser(userId) {
-    await axios.delete(`http://localhost:3003/users/${userId}`)
+    await axios.delete(`http://localhost:3001/users/${userId}`)
     const newUser = users.filter(user => user.id !== userId)
     setUsers(newUser);
   }

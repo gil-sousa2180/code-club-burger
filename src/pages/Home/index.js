@@ -21,10 +21,10 @@ function App() {
   const inputName = useRef();
   const inputAge = useRef();
   async function addNewUsers() {
-    const { data: newUser } = await axios.post("http://localhost:3003/users", {
+    const { data: newUser } = await axios.post("http://localhost:3001/users", {
       name: inputName.current.value,
       age: inputAge.current.value,
-    });
+    }); 
     setUsers([...users, newUser])
     history.push('/usuarios')
   }
